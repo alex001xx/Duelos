@@ -1,11 +1,11 @@
--- Kaiser Hub: versi贸n reconstruida y editable para sintaxis Lua 5.1 / Luau.
--- Verificaci贸n de esta modificaci贸n: compilaci贸n de sintaxis Luau.
--- No se ha probado dentro de Roblox ni en un ejecutor espec铆fico.
--- No usa goto ni etiquetas de Lua 5.2. Las cadenas ya est谩n descifradas.
--- main inicia la interfaz sin el control de integridad a帽adido por el ofuscador.
--- Inicio directo: se elimin贸 la pantalla de key y la validaci贸n remota.
+-- Kaiser Hub: versión reconstruida y editable para sintaxis Lua 5.1 / Luau.
+-- Verificación: sintaxis y arranque con servicios Roblox simulados.
+-- No se ha probado dentro de Roblox ni en un ejecutor específico.
+-- No usa goto ni etiquetas de Lua 5.2. Las cadenas ya están descifradas.
+-- main inicia la interfaz sin el control de integridad añadido por el ofuscador.
+-- Inicio directo: se eliminó la pantalla de key y la validación remota.
 -- Los nombres originales de variables no son recuperables; captures conserva las referencias compartidas.
--- Las regiones de flujo no estructuradas utilizan pasos expl铆citos con nombres, sin c贸digo cifrado.
+-- Las regiones de flujo no estructuradas utilizan pasos explícitos con nombres, sin código cifrado.
 local unpack_values = table.unpack or unpack
 local function pack_values(...)
     return {n = select("#", ...), ...}
@@ -709,11 +709,11 @@ callbacks.callback_29 = function(captures, arguments)
         I, X = temp_9, temp_5
     end
     if (not branch_result) then
-        I = (X.value == "Pega tu key aqu铆")
+        I = (X.value == "Pega tu key aquí")
     end
     branch_result = I
     if branch_result then
-        captures[1].value.PlaceholderText = "隆Escribe una key v谩lida!"
+        captures[1].value.PlaceholderText = "¡Escribe una key válida!"
         return unpack_values({})
     end
     captures[1].value.Text = ""
@@ -853,7 +853,7 @@ callbacks.callback_36 = function(captures, arguments)
         B = temp_4
     end
     if branch_result then
-        warn(("Error al guardar la configuraci贸n: " .. tostring(B)))
+        warn(("Error al guardar la configuración: " .. tostring(B)))
     end
     return unpack_values({})
 end
@@ -1482,7 +1482,7 @@ callbacks.callback_53 = function(captures, arguments)
         g, o, u = temp_5, temp_1, temp_5
     end
     if branch_result then
-        o = "FOV Modo M贸vil (Centro)"
+        o = "FOV Modo Móvil (Centro)"
     end
     branch_result = o
     l = o
@@ -2097,7 +2097,7 @@ callbacks.callback_62 = function(captures, arguments)
     end
     captures[12].value.Visible = false
     captures[13].value()
-    captures[14].value("KaiserHub", "Tama帽o del panel reiniciado")
+    captures[14].value("KaiserHub", "Tamaño del panel reiniciado")
     captures[3].value.Position = UDim2.new(0, 3, 0.5, -9)
     captures[6].value.BackgroundColor3 = Color3.fromRGB(50, 50, 55)
     captures[1].value = false
@@ -2454,7 +2454,7 @@ callbacks.build_modern_interface = function(captures, arguments)
     do
         local temp_12, temp_13, temp_17, temp_18, temp_22, temp_23, temp_27, temp_28, temp_32, temp_36,
             temp_37, temp_41, temp_42, temp_46, temp_47, temp_51, temp_52, temp_56, temp_7, temp_8
-        print("隆Ejecutando Kaiser Modern Gui!")
+        print("¡Ejecutando Kaiser Modern Gui!")
         temp_7 = game.GetService(game, "Players")
         temp_8 = {}
         temp_8.value = temp_7
@@ -3158,7 +3158,7 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[1176] = temporary[1175](0, 16, 0, 6)
         temporary[1164].Position = temporary[1176]
         temporary[1164].BackgroundTransparency = 1
-        temporary[1164].Text = "KaiserHub   v10.6.1"
+        temporary[1164].Text = "KaiserHub v10.6.1"
         temporary[1187] = Color3.fromRGB
         temporary[1188] = temporary[1187](255, 255, 255)
         temporary[1164].TextColor3 = temporary[1188]
@@ -3275,7 +3275,7 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[1416] = Color3.fromRGB
         temporary[1417] = temporary[1416](35, 22, 22)
         temporary[1399].BackgroundColor3 = temporary[1417]
-        temporary[1399].Text = "脳"
+        temporary[1399].Text = "×"
         temporary[1426] = Color3.fromRGB
         temporary[1427] = temporary[1426](255, 95, 95)
         temporary[1399].TextColor3 = temporary[1427]
@@ -3627,7 +3627,7 @@ callbacks.build_modern_interface = function(captures, arguments)
     end
     do
         local temporary = {}
-        scratch_69.S_EspLinePos = scratch_72(scratch_63, ("Posici贸n L铆neas: " .. scratch_76))
+        scratch_69.S_EspLinePos = scratch_72(scratch_63, ("Posición Líneas: " .. scratch_76))
         temporary[8] = Instance.new("TextButton")
         temporary[8].Size = UDim2.new(1, 0, 1, 0)
         temporary[8].BackgroundTransparency = 1
@@ -3658,11 +3658,11 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[109].S_AutoShoot = temporary[117]
         temporary[118] = scratch_70.value
         temporary[121] = l7.value
-        temporary[124] = temporary[121](scratch_64, "Aimbot C谩mara")
+        temporary[124] = temporary[121](scratch_64, "Aimbot Cámara")
         temporary[118].S_Aimbot = temporary[124]
         temporary[125] = scratch_70.value
         temporary[128] = l7.value
-        temporary[131] = temporary[128](scratch_64, "Posici贸n Aimbot: Head")
+        temporary[131] = temporary[128](scratch_64, "Posición Aimbot: Head")
         temporary[125].S_AimbotPart = temporary[131]
         temporary[132] = scratch_70.value
         temporary[135] = l7.value
@@ -3675,11 +3675,11 @@ callbacks.build_modern_interface = function(captures, arguments)
         u7(scratch_64, "Fov")
         temporary[149] = scratch_70.value
         temporary[152] = l7.value
-        temporary[155] = temporary[152](scratch_64, "Mostrar C铆rculo FOV")
+        temporary[155] = temporary[152](scratch_64, "Mostrar Círculo FOV")
         temporary[149].S_ShowFOV = temporary[155]
         temporary[156] = scratch_70.value
         temporary[159] = l7.value
-        temporary[164] = temporary[159](scratch_64, "FOV", "M贸vil")
+        temporary[164] = temporary[159](scratch_64, "FOV", "Móvil")
         temporary[156].S_FOVType = temporary[164]
         temporary[165] = scratch_70.value
         temporary[168] = l7.value
@@ -3687,7 +3687,7 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[165].S_FOVColor = temporary[171]
         temporary[172] = scratch_70.value
         temporary[175] = l7.value
-        temporary[178] = temporary[175](scratch_64, "Tama帽o del FOV")
+        temporary[178] = temporary[175](scratch_64, "Tamaño del FOV")
         temporary[172].S_FOVSize = temporary[178]
         temporary[179] = scratch_70.value
         temporary[182] = l7.value
@@ -3758,7 +3758,7 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[303].S_HitboxVisible = temporary[309]
         temporary[310] = scratch_70.value
         temporary[313] = l7.value
-        temporary[316] = temporary[313](scratch_65, "Tama帽o de Hitbox")
+        temporary[316] = temporary[313](scratch_65, "Tamaño de Hitbox")
         temporary[310].S_HitboxSize = temporary[316]
         u7(scratch_65, "Atajos PC (Hitbox)")
         temporary[320] = scratch_70.value
@@ -3827,8 +3827,8 @@ callbacks.build_modern_interface = function(captures, arguments)
     end
     do
         local temporary = {}
-        scratch_73.S_TargetSelect = scratch_75(scratch_66, ("Matar Objetivo Espec铆fico: " .. scratch_79))
-        scratch_70.value.S_KillAuraFloat = l7.value(scratch_66, "Bot贸n Flotante Kill Aura", "M贸vil")
+        scratch_73.S_TargetSelect = scratch_75(scratch_66, ("Matar Objetivo Específico: " .. scratch_79))
+        scratch_70.value.S_KillAuraFloat = l7.value(scratch_66, "Botón Flotante Kill Aura", "Móvil")
         scratch_70.value.S_KillAuraBind = l7.value(scratch_66, "Tecla Para Activar Kill Aura", "PC")
         temporary[26] = Instance.new("TextButton")
         temporary[26].Size = UDim2.new(1, 0, 1, 0)
@@ -3844,7 +3844,7 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[55](temporary[56], unpack_values({temporary[59].Connect(temporary[59], bind(callbacks.callback_44, {I7, captures[1], captures[2], w, scratch_70, zh, ph}))}))
         u7(scratch_66, "Ayuda Kill Aura")
         scratch_70.value.S_Invisible = l7.value(scratch_66, "Invisible")
-        scratch_70.value.S_InvisibleFloat = l7.value(scratch_66, "Bot贸n Flotante Invisible", "M贸vil")
+        scratch_70.value.S_InvisibleFloat = l7.value(scratch_66, "Botón Flotante Invisible", "Móvil")
         scratch_70.value.S_InvisibleBind = l7.value(scratch_66, "Tecla Para Activar Invisible (PC)")
         o7(scratch_70.value.S_Invisible, "InvisibleEnabled", w.value.InvisibleEnabled, bind(callbacks.callback_45, {w, captures[1], captures[2], fh, zh}))
         temporary[102] = scratch_70.value
@@ -4021,7 +4021,7 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[421] = l7.value
         temporary[424] = temporary[421](scratch_68, "Rejoin")
         temporary[425] = l7.value
-        temporary[430] = temporary[425](scratch_68, "Tama帽o del Panel", "Ajusta El Tama帽o Recomendado En Movil")
+        temporary[430] = temporary[425](scratch_68, "Tamaño del Panel", "Ajusta El Tamaño Recomendado En Movil")
         temporary[431] = l7.value
         temporary[434] = temporary[431](scratch_68, "Color del Panel")
         temporary[435] = l7.value
@@ -4029,9 +4029,9 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[439] = l7.value
         temporary[442] = temporary[439](scratch_68, "Mostrar Notificaciones")
         temporary[443] = l7.value
-        temporary[446] = temporary[443](scratch_68, "Mostrar Bot贸n Flotante")
+        temporary[446] = temporary[443](scratch_68, "Mostrar Botón Flotante")
         temporary[449] = bind(callbacks.callback_58, {w, captures[1], captures[2], scratch_17, ph})
-        o7(temporary[430], "Restablecer Tama帽o (100%)", false, temporary[449])
+        o7(temporary[430], "Restablecer Tamaño (100%)", false, temporary[449])
         scratch_3(temporary[420], "ToggleUI")
         temporary[457] = w.value
         temporary[460] = temporary[457].NotificationsEnabled
@@ -4141,7 +4141,7 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[656] = temporary[655](1, -20, 1, -20)
         temporary[640].Position = temporary[656]
         temporary[640].BackgroundTransparency = 1
-        temporary[640].Text = "鈼�"
+        temporary[640].Text = "◢"
         temporary[667] = Color3.fromRGB
         temporary[668] = temporary[667](255, 255, 255)
         temporary[640].TextColor3 = temporary[668]
@@ -4207,7 +4207,7 @@ callbacks.build_modern_interface = function(captures, arguments)
         temporary[789] = temporary[788](0, 12, 0, 0)
         temporary[777].Position = temporary[789]
         temporary[777].BackgroundTransparency = 1
-        temporary[777].Text = "Reiniciar Tama帽o"
+        temporary[777].Text = "Reiniciar Tamaño"
         temporary[800] = Color3.fromRGB
         temporary[801] = temporary[800](255, 255, 255)
         temporary[777].TextColor3 = temporary[801]
@@ -4706,7 +4706,7 @@ callbacks.callback_74 = function(captures, arguments)
     local e7 = {}
     do
         local temp_4, temp_5
-        print("隆Ejecutando Kaiser Modern Gui!")
+        print("¡Ejecutando Kaiser Modern Gui!")
         temp_4 = bind(callbacks.build_modern_interface, {captures[1], captures[2]})
         temp_5 = {}
         temp_4()
@@ -5978,7 +5978,7 @@ callbacks.callback_100 = function(captures, arguments)
     return unpack_values({("cTbzbvPE86f3" / (10371504 - ("vq30" ^ 10414190)))})
 end
 
--- Compatibilidad con callbacks antiguos: acceso local sin validaci贸n remota.
+-- Compatibilidad con callbacks antiguos: acceso local sin validación remota.
 callbacks.verify_access_key = function(captures, arguments)
     for i = 6, 7 do
         if captures[i].value then captures[i].value:Disconnect() end
@@ -6113,7 +6113,7 @@ callbacks.callback_106 = function(captures, arguments)
             do
                 local temp_13, temp_38, temp_63, temp_64, temp_66
                 temp_13 = {"Aimbot", "Hitbox", "ESP", "KillAura", "AutoFarm", "Settings"}
-                temp_38 = {["ESP"] = "馃憗锔�", ["Aimbot"] = "馃敨", ["Hitbox"] = "馃幆", ["KillAura"] = "馃懝", ["AutoFarm"] = "馃師锔�", ["Settings"] = "鈿欙笍"}
+                temp_38 = {["ESP"] = "👁️", ["Aimbot"] = "🔫", ["Hitbox"] = "🎯", ["KillAura"] = "👹", ["AutoFarm"] = "🎟️", ["Settings"] = "⚙️"}
                 temp_63 = {["ESP"] = "Visual", ["Aimbot"] = "Aimbot", ["Hitbox"] = "Hitbox", ["KillAura"] = "Kill Aura", ["AutoFarm"] = "Autofarm", ["Settings"] = "Config"}
                 temp_64 = {}
                 temp_64.value = bind(callbacks.callback_102, {captures[4], captures[2], captures[3], captures[5], captures[6]})
@@ -6168,7 +6168,7 @@ callbacks.callback_106 = function(captures, arguments)
                 end
                 do
                     local temp_42, temp_55, temp_56, temp_59, temp_60
-                    z.Text = ("  " .. (K .. (" " .. D)))
+                    z.Text = (" " .. (K .. (" " .. D)))
                     z.TextColor3 = Color3.fromRGB(255, 255, 255)
                     z.Font = Enum.Font.GothamBold
                     z.TextSize = 14
@@ -6524,7 +6524,7 @@ callbacks.callback_113 = function(captures, arguments)
             captures[1].value.EspLinePosition = "Abajo"
         end
     end
-    captures[4].value.S_EspLinePos.Title.Text = ("Posici贸n L铆neas: " .. captures[1].value.EspLinePosition)
+    captures[4].value.S_EspLinePos.Title.Text = ("Posición Líneas: " .. captures[1].value.EspLinePosition)
     captures[5].value()
     return unpack_values({})
 end
@@ -6550,7 +6550,7 @@ callbacks.callback_114 = function(captures, arguments)
     if (not branch_result) then
         l = "Esp Vida Desactivado"
     end
-    u("Kaiser  Hub", l)
+    u("Kaiser Hub", l)
     return unpack_values({})
 end
 
@@ -6664,7 +6664,7 @@ callbacks.callback_119 = function(captures, arguments)
         X = temp_8
     end
     if branch_result then
-        X.Text = ("Posici贸n Aimbot: " .. ({"Head", "Torso"})[captures[4].value.AimbotPartIndex])
+        X.Text = ("Posición Aimbot: " .. ({"Head", "Torso"})[captures[4].value.AimbotPartIndex])
     end
     return unpack_values({})
 end
@@ -7144,45 +7144,16 @@ callbacks.callback_133 = function(captures, arguments)
 end
 
 -- callback_134; bloques originales: 11
+-- Las imágenes opcionales no bloquean la creación del menú con descargas HTTP.
 callbacks.callback_134 = function(captures, arguments)
-    local B, I, X, branch_result, l
-    local e7 = {}
-    do
-        local temp_1, temp_2
-        temp_1 = {}
-        temp_1.value = arguments[1]
-        temp_2 = {}
-        temp_2.value = arguments[2]
-        branch_result = writefile
-        B, I, X = temp_2, writefile, temp_1
+    local filename = arguments[2]
+    if isfile and getcustomasset then
+        local ok, asset = pcall(function()
+            if isfile(filename) then return getcustomasset(filename) end
+        end)
+        if ok and asset then return asset end
     end
-    if branch_result then
-        branch_result = isfile
-        l = isfile
-        if branch_result then
-            l = getcustomasset
-        end
-        I = l
-    end
-    branch_result = I
-    if branch_result then
-        do
-            local temp_2, temp_3, temp_4
-            temp_2 = {pcall(bind(callbacks.callback_22, {B, X}))}
-            temp_3 = temp_2[1]
-            temp_4 = temp_2[2]
-            branch_result = temp_3
-            I, l = temp_3, temp_4
-        end
-        if branch_result then
-            I = l
-        end
-        branch_result = I
-        if branch_result then
-            return unpack_values({l})
-        end
-    end
-    return unpack_values({X.value})
+    return ""
 end
 
 -- callback_135; bloques originales: 1
@@ -7252,7 +7223,7 @@ callbacks.callback_137 = function(captures, arguments)
         X = temp_3
     end
     if branch_result then
-        warn(("Error al cargar la configuraci贸n: " .. tostring(X)))
+        warn(("Error al cargar la configuración: " .. tostring(X)))
     end
     return unpack_values({})
 end
@@ -11461,7 +11432,7 @@ callbacks.callback_188 = function(captures, arguments)
         captures[5].value.Position = UDim2.new(0.5, ((- (captures[6].value.X * 1)) / 2), 0.5, ((- (captures[6].value.Y * 1)) / 2))
     end
     captures[7].value()
-    captures[8].value("KaiserHub", "Tama帽o del panel reiniciado al recomendado (100%)")
+    captures[8].value("KaiserHub", "Tamaño del panel reiniciado al recomendado (100%)")
     return unpack_values({})
 end
 
@@ -12149,30 +12120,21 @@ callbacks.main = function(captures, arguments)
         temp_6.value = temp_5
         u.value = setmetatable({}, {["__index"] = temp_6.value, ["__metatable"] = nil})
         B.value = bind(callbacks.decode_cached_string, {temp_6, temp_1, a, q, o, temp_4})
-        temp_15 = game.GetService(game, "HttpService")
-        temp_16 = {}
-        temp_16.value = temp_15
-        temp_20 = game.GetService(game, "Players")
-        temp_24 = game.GetService(game, "CoreGui")
-        temp_25 = {}
-        temp_25.value = temp_24
-        temp_29 = game.GetService(game, "RunService")
-        temp_30 = {}
-        temp_30.value = temp_29
-        temp_34 = game.GetService(game, "TweenService")
-        temp_35 = {}
-        temp_35.value = temp_34
-        tostring(temp_20.LocalPlayer.UserId)
-        temp_45 = bind(callbacks.callback_73, {u, B, temp_30})
-        temp_46 = bind(callbacks.callback_74, {u, B})
-        temp_47 = {}
-        temp_47.value = temp_45
-        temp_48 = {}
-        temp_48.value = temp_46
-        temp_49 = {}
-        temp_49.value = bind(callbacks.build_loading_interface, {temp_25, u, B, temp_47, temp_35, temp_30, temp_48})
-        return temp_49.value()
+        return callbacks.build_modern_interface({u, B}, {})
     end
 end
 
-return callbacks.main({}, {...})
+local startup_arguments = {...}
+local ok, result = xpcall(function()
+    return callbacks.main({}, startup_arguments)
+end, function(message)
+    if debug and debug.traceback then
+        return debug.traceback(tostring(message), 2)
+    end
+    return tostring(message)
+end)
+if not ok then
+    warn("[Kaiser Hub] No se pudo abrir el menú: " .. tostring(result))
+    error(result, 0)
+end
+return result
